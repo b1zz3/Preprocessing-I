@@ -59,7 +59,7 @@ html, body {
 
 
 @button: grey;
-@section-bkgd: lightgrey;
+@section-bkgd: rgb(227, 249, 251);
 @font-base: 62.5%;
 
 html {
@@ -76,7 +76,7 @@ html {
 	justify-content: space-between;
 	background: @section-bkgd;
 	padding: 25px;
-	height: 450px;
+	height: 400px;
 	h1 {
 		font-size: 5rem;
 	}
@@ -110,3 +110,48 @@ img {
 	width: 30%;
 	height: auto;
   }
+
+.middle {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+}
+
+.middle-left {
+	width: 45%;
+	h1 {
+		font-size: 3rem;
+		padding-bottom: 10px;
+	}
+	p {
+		font-size: 2rem;
+	}
+}
+
+.middle-right {
+	.middle-left();
+	li {
+		padding: 10px;
+		font-size: 2rem;
+	}
+}
+
+h2 {
+	font-size: 2rem;
+	padding-bottom: 10px;
+}
+table {
+	font-size: 2rem;
+	width: 100%;
+	text-align: left;
+	tr, td {
+		padding: 10px;
+	}
+}
+footer {
+	background: @button;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+	height: 50px;
+}

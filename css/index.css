@@ -144,9 +144,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: lightgrey;
+  background: #e3f9fb;
   padding: 25px;
-  height: 450px;
+  height: 400px;
 }
 .top h1 {
   font-size: 5rem;
@@ -177,4 +177,53 @@ nav {
 img {
   width: 30%;
   height: auto;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.middle-left {
+  width: 45%;
+}
+.middle-left h1 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.middle-left p {
+  font-size: 2rem;
+}
+.middle-right {
+  width: 45%;
+}
+.middle-right h1 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.middle-right p {
+  font-size: 2rem;
+}
+.middle-right li {
+  padding: 10px;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+table {
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+table tr,
+table td {
+  padding: 10px;
+}
+footer {
+  background: grey;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  height: 50px;
 }
