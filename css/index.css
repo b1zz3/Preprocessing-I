@@ -134,3 +134,47 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
+.container {
+  padding: 40px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: lightgrey;
+  padding: 25px;
+  height: 450px;
+}
+.top h1 {
+  font-size: 5rem;
+}
+.top h2 {
+  background: grey;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 14rem;
+}
+.top h3 {
+  font-size: 2rem;
+}
+.top p {
+  font-size: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: 60%;
+  padding-bottom: 10px;
+}
+img {
+  width: 30%;
+  height: auto;
+}
