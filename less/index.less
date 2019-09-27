@@ -79,12 +79,9 @@ html {
 	background: @section-bkgd;
 	padding: 25px;
 	height: 400px;
-
 	h1 {
 		font-size: @desktop-font;
-		@media screen and (min-width: 500px) {
-			font-size: 29px;
-		}
+
 	}
 	h2 {
 		background: @button;
@@ -94,12 +91,21 @@ html {
 		padding: 10px;
 		text-align: center;
 		width: 14rem;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
 	}
 	h3 {
 		font-size: 2vw;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
 	}
 	p {
 		font-size: 2vw;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -110,6 +116,11 @@ nav {
 	font-size: 2rem;
 	padding-left: 60%;
 	padding-bottom: 10px;
+	@media screen and (max-width: 500px) {
+		font-size: 20px;
+		justify-content: space-evenly;
+		padding-left: 0;
+	}
 }
 
 img {
@@ -127,8 +138,11 @@ padding-top: 20px;
 .middle-left {
 	width: 45%;
 	h1 {
-		font-size: 3rem;
+		font-size: 3vw;
 		padding-bottom: 10px;
+		@media screen and (max-width: 500px) {
+			font-size: 22px;
+		}
 	}
 	p {
 		font-size: 2rem;
@@ -136,21 +150,32 @@ padding-top: 20px;
 }
 
 .middle-right {
+
 	.middle-left();
 	li {
 		padding: 10px;
-		font-size: 2rem;
+		font-size: 2vw;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
 	}
 }
 
 h2 {
 	font-size: 2rem;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
 table {
 	font-size: 2rem;
 	width: 100%;
 	text-align: left;
+	padding-bottom: 20px;
+
+	@media screen and (max-width: 500px) {
+		font-size: 18px;
+		background: @section-bkgd;
+	}
 	tr, td {
 		padding: 10px;
 	}
@@ -161,4 +186,8 @@ footer {
 	font-size: 2rem;
 	color: white;
 	height: 50px;
+	padding: 10px;
+	@media screen and (max-width: 500px) {
+		font-size: 12px;
+	}
 }

@@ -151,11 +151,6 @@ html {
 .top h1 {
   font-size: 5vw;
 }
-@media screen and (min-width: 500px) {
-  .top h1 {
-    font-size: 29px;
-  }
-}
 .top h2 {
   background: grey;
   color: white;
@@ -165,11 +160,26 @@ html {
   text-align: center;
   width: 14rem;
 }
+@media screen and (max-width: 500px) {
+  .top h2 {
+    font-size: 20px;
+  }
+}
 .top h3 {
   font-size: 2vw;
 }
+@media screen and (max-width: 500px) {
+  .top h3 {
+    font-size: 20px;
+  }
+}
 .top p {
   font-size: 2vw;
+}
+@media screen and (max-width: 500px) {
+  .top p {
+    font-size: 20px;
+  }
 }
 nav {
   display: flex;
@@ -178,6 +188,13 @@ nav {
   font-size: 2rem;
   padding-left: 60%;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  nav {
+    font-size: 20px;
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
 }
 img {
   width: 30%;
@@ -193,8 +210,13 @@ img {
   width: 45%;
 }
 .middle-left h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  .middle-left h1 {
+    font-size: 22px;
+  }
 }
 .middle-left p {
   font-size: 2rem;
@@ -203,24 +225,42 @@ img {
   width: 45%;
 }
 .middle-right h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  .middle-right h1 {
+    font-size: 22px;
+  }
 }
 .middle-right p {
   font-size: 2rem;
 }
 .middle-right li {
   padding: 10px;
-  font-size: 2rem;
+  font-size: 2vw;
+}
+@media screen and (max-width: 500px) {
+  .middle-right li {
+    font-size: 20px;
+  }
 }
 h2 {
   font-size: 2rem;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 table {
   font-size: 2rem;
   width: 100%;
   text-align: left;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  table {
+    font-size: 18px;
+    background: #e3f9fb;
+  }
 }
 table tr,
 table td {
@@ -232,4 +272,10 @@ footer {
   font-size: 2rem;
   color: white;
   height: 50px;
+  padding: 10px;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 12px;
+  }
 }
