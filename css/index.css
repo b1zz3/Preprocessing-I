@@ -266,16 +266,19 @@ table tr,
 table td {
   padding: 10px;
 }
-footer {
-  background: grey;
+.footer {
+  border: solid black 1px;background: lightgreen;border-radius: 5px;font-size: 2vw;
+}
+.footer {
   text-align: center;
   font-size: 2rem;
-  color: white;
-  height: 50px;
+  color: black;
+  height: auto;
   padding: 10px;
 }
 @media screen and (max-width: 500px) {
-  footer {
+  .footer,
+  .footer {
     font-size: 12px;
   }
 }

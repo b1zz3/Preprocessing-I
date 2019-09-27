@@ -83,6 +83,7 @@ html {
 		font-size: @desktop-font;
 
 	}
+
 	h2 {
 		background: @button;
 		color: white;
@@ -180,12 +181,13 @@ table {
 		padding: 10px;
 	}
 }
-footer {
-	background: @button;
+@import (reference) "test.less";
+.footer:extend(.footer all) {
+	// background: @button;
 	text-align: center;
 	font-size: 2rem;
-	color: white;
-	height: 50px;
+	color: black;
+	height: auto;
 	padding: 10px;
 	@media screen and (max-width: 500px) {
 		font-size: 12px;
