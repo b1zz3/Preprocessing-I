@@ -57,3 +57,139 @@ html, body {
     height: 100%;
 }
 
+
+@button: grey;
+@section-bkgd: rgb(227, 249, 251);
+@font-base: 62.5%;
+@desktop-font: 5vw;
+@mobile-font: 2vw;
+
+html {
+	font-size: @font-base;
+}
+
+.container {
+	padding: 40px;
+}
+
+.top {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: @section-bkgd;
+	padding: 25px;
+	height: 400px;
+	h1 {
+		font-size: @desktop-font;
+
+	}
+
+	h2 {
+		background: @button;
+		color: white;
+		font-size: 2rem;
+		border-radius: 5px;
+		padding: 10px;
+		text-align: center;
+		width: 14rem;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
+	}
+	h3 {
+		font-size: 2vw;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
+	}
+	p {
+		font-size: 2vw;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 2rem;
+	padding-left: 60%;
+	padding-bottom: 10px;
+	@media screen and (max-width: 500px) {
+		font-size: 20px;
+		justify-content: space-evenly;
+		padding-left: 0;
+	}
+}
+
+img {
+	width: 30%;
+	max-width: 200px;
+	height: auto;
+  }
+
+.middle {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+}
+
+.middle-left {
+	width: 45%;
+	h1 {
+		font-size: 3vw;
+		padding-bottom: 10px;
+		@media screen and (max-width: 500px) {
+			font-size: 22px;
+		}
+	}
+	p {
+		font-size: 2rem;
+	}
+}
+
+.middle-right {
+
+	.middle-left();
+	li {
+		padding: 10px;
+		font-size: 2vw;
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
+	}
+}
+
+h2 {
+	font-size: 2rem;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+table {
+	font-size: 2rem;
+	width: 100%;
+	text-align: left;
+	padding-bottom: 20px;
+
+	@media screen and (max-width: 500px) {
+		font-size: 18px;
+		background: @section-bkgd;
+	}
+	tr, td {
+		padding: 10px;
+	}
+}
+@import (reference) "test.less";
+.footer:extend(.footer all) {
+	// background: @button;
+	text-align: center;
+	font-size: 2rem;
+	color: black;
+	height: auto;
+	padding: 10px;
+	@media screen and (max-width: 500px) {
+		font-size: 12px;
+	}
+}
